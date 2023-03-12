@@ -3,13 +3,14 @@ import Link from "next/link"
 export default function Blog(props) {
   return (
     <main>
-      <h1>The Blog</h1>
+      <h1>Developer Blog</h1>
       <ul>
         <li>
           <article>
             <Link href="posts/first-post">
               <h2>Learning how to build a blog with Next.js</h2>
             </Link>
+            <hr />
           </article>
         </li>
         <li>
