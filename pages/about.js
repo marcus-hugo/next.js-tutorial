@@ -1,9 +1,14 @@
+import selfie from "../public/images/selfie.png"
+import Image from "next/image"
+
 export default function About(props) {
   return (
     <main>
       <div>
         <h1>About Me</h1>
-        <p>I enjoy learing all things about web development. In every project, I strive for semantic HTML5, effecient CSS, and vanilla JavaScript, all the while keeping accessibilty, and a beautiful UI/UX in mind.</p>
+        <p>
+          <Image className="about-text__image" priority src={selfie} height={144} width={144} alt="Marcus Hugo" />I enjoy learing all things about web development. In every project, I strive for semantic HTML, effecient CSS, and vanilla JavaScript, all the while keeping accessibilty, and a beautiful UI/UX in mind.
+        </p>
         <p>My background is in art, music, and auto mechanics. I've dabbled in painting, photography, music recording, sythesizers, and auto mechanics. I've always enjoyed technology. I think it's a very challenging field leaning more on the abstract.</p>
         <p>I'm currently learning Eleventy, React, and now Next.js. When I'm not coding I enjoy watching movies and playing music.</p>
         <p>I have {props.repoCount} public repos on GitHub.</p>
